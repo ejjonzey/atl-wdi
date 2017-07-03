@@ -15,6 +15,7 @@ var sumOfNums = function(numsArray){
   for (var i = 0; i < numsArray.length; i++) {
     sum += numsArray[i]; // Your Code Here
 }
+};
 
 // #2
 // Input: an array of numbers
