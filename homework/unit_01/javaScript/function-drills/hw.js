@@ -125,4 +125,4 @@ module.exports = {
   anyHaveAtLeastTwoVowels: anyHaveAtLeastTwoVowels,
   noneHaveTwoOrMoreVowels: noneHaveTwoOrMoreVowels,
   buildObjectFromWords: buildObjectFromWords
-}
+};
