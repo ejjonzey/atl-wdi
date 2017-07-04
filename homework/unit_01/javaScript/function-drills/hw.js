@@ -24,9 +24,9 @@ return sum;
 //         greater (i.e. greater than but not equal to) than 10
 var numsGreaterThanTen = function(numsArray){
  var results = [];
- for(var what = 0; what < numsArray.length; what++) {
-  if (numsArray[what] > 10) {
-    results.push(numsArray[what]);
+ for(var i = 0; i < numsArray.length; i++) {
+  if (numsArray[i] > 10) {
+    results.push(numsArray[i]);
   }
  } 
  return result;// Your Code Here
