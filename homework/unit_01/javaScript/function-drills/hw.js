@@ -23,13 +23,13 @@ return sum;
 // Output: an array of the numbers from the first array that are strictly
 //         greater (i.e. greater than but not equal to) than 10
 var numsGreaterThanTen = function(numsArray){
- var results = [];
- for(var i = 0; i < numsArray.length; i++) {
-  if (numsArray[i] > 10) {
-    results.push(numsArray[i]);
+  var results = [];
+  for (var i = 0; i < numsArray.length; i++) {
+    if (numsArray[i] > 10) {
+      results.push(numsArray[i]);
+    }
   }
- } 
- return result;// Your Code Here
+  return results;
 };
 
 // #3
@@ -38,7 +38,12 @@ var numsGreaterThanTen = function(numsArray){
 //         `false` otherwise
 // Edge Case: If the input array is empty, the function should return `true`.
 var allGreaterThanTen = function(numsArray){
-  // Your Code Here
+  for (var i = 0; i < numsArray.length; i++) {
+    if (!(numsArray[i] > 10)) {
+      return false;
+    }
+  }
+  return true;
 };
 
 // #4
