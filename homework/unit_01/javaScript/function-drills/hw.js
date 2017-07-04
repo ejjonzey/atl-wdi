@@ -57,8 +57,6 @@ var wordsWithAtLeastFiveLetters = function(words) {
     }
   }
   return results;
-  //// alternatively, using Array methods
-  // return words.filter(function(word){ return word.length >= 5; });
 };
 
 // #5
@@ -66,8 +64,13 @@ var wordsWithAtLeastFiveLetters = function(words) {
 // Output: `true` if ALL words start with the letter 'a' (case-insensitive),
 //          `false` otherwise
 // Edge Case: If the array is empty, the function should return `true`.
-var allStartingWithA = function(words){
-  // Your Code Here
+var allStartingWithA = function(words) {
+  for (var i = 0; i < words.length; i++) {
+    if (!(words[i].slice(0, 1) === 'a' || words[i].slice(0, 1) === 'A')) {
+      return false;
+    }
+  }
+  return true;
 };
 
 // #6
