@@ -92,7 +92,7 @@ var anyStartingWithB = function(words) {
 //          `false` otherwise
 //    Assume that vowels are 'a', 'e', 'i', 'o', and 'u' (NOT 'y')
 // Edge Case: If `n` is less than zero, return `null`.
-var hasAtLeastNVowels = function(word, n){
+var hasAtLeastNVowels = function(word, n) {
   if (n < 0) {
     return null;
   }
@@ -108,7 +108,6 @@ var hasAtLeastNVowels = function(word, n){
     }
   }
   return count >= n;
-} 
 };
 
 // #8
