@@ -28,7 +28,8 @@ var numsGreaterThanTen = function(numsArray){
   if (numsArray[what] > 10) {
     results.push(numsArray[what]);
   }
- } // Your Code Here
+ } 
+ return result;// Your Code Here
 };
 
 // #3
