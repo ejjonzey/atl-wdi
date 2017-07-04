@@ -126,8 +126,6 @@ var hasAtLeastNVowels = function(word, n) {
     }
   }
   return count >= n;
-  //// using a combination of array methods and regular expressions
-  // return word.match(/[aeiouAEIOU]/).length >= n;
 };
 
 // #8
