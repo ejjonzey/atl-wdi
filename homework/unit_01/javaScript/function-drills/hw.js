@@ -51,9 +51,9 @@ var allGreaterThanTen = function(numsArray){
 // Output: an array of all words from the first array with five or more letters
 var wordsWithAtLeastFiveLetters = function(words){
   var results = [];
-  for (var t = 0; t < words.length; t++) {
-  if (words(t).length >= 5) {
-  results.push(words[t]);
+  for (var i = 0; i < words.length; i++) {
+  if (words(i).length >= 5) {
+  results.push(words[i]);
   }
   }
   return results;// Your Code Here
