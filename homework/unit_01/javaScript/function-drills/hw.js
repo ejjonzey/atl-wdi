@@ -114,8 +114,14 @@ var hasAtLeastNVowels = function(word, n) {
 // Input: an array of words
 // Output: an array of words from the original array that have at least two
 //          vowels
-var wordsWithAtLeastTwoVowels = function(words){
-  // Your Code Here
+var wordsWithAtLeastTwoVowels = function(words) {
+  var results = [];
+  for (var i = 0; i < words.length; i++) {
+    if (hasAtLeastNVowels(words[i], 2)) {
+      results.push(words[i]);
+    }
+  }
+  return results;
 };
 
 // #9
