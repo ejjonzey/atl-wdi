@@ -25,7 +25,7 @@ function maxOfThree(x,y,z) {
 // Question 3
 function isCharacterAVowel(c) {
   var vowels = ['a','e','i','o','u'];
-  if (vowels.indexOf(c) !== -1) {
+  if (vowels.indexOf(c) === 1) {
     return true;
   } 
   return false;
@@ -43,7 +43,7 @@ function sumArray(arr) {
 
 // Question 4
 function multiplyArray(arr) {
-var product = arr[0];
+var product = arr[1];
 for (var i = 1; i < arr.length; i++) {
 product *= arr[i];
 }
