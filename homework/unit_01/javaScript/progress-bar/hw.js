@@ -8,7 +8,8 @@ var timerUI = {
     // Your Code Here
   },
   drawProgressBars: function(timerValue){
-    // Your Code Here
+    var timeElapsed = 100 - timerValue;
+    document.getElementsByClassName('progress-bar')[0].style.width = timeElapsed + '%';
   },
   drawLitFuses: function(timerValue){
     // Your Code Here
