@@ -60,14 +60,69 @@ track of whether tasks have been completed, it will also keep track of
 how long each task took to complete. Tasks can be grouped into 'projects' to
 keep them organized.
 
-> Answer here
+> With both tasks, projects, and multiple options for each these need to be used as objects, not strings. 
+
+> Tasks have:
+> A name
+> Time started
+> is it complete
+> Time to complete
+
+> Projects have:
+> Names
+> descriptions
+set of tasks
+> is it complete
+
+> sudo code:
+> var task = {
+  name: "homework";
+  time started: "";
+  is complete: ""
+}
+var project = {
+  name: "memory_game";
+  description: "game built with no idea what we were doing."
+  set of tasks: [built HTML, built CSS, built JS, cloned and pushed to github];
+  is complete: ""
+}
 
 ### 2. Photo Sharing App
 
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
 
-> Answer here
+> Users will upload photos, share them with others and create albums.  All three of these will be their own object.
 
+> Users have:
+> userName
+> photos they have uploaded
+> albums they have created.
+
+>Photos have:
+> a name
+> a date
+> a url location.
+
+>albums have:
+> a name
+> set of photos
+
+var user = {
+  userName: "";
+  photosUploaded:[];
+  albumsCreted: [];
+}
+
+var photo = {
+  name: "";
+  date: "";
+  url: "";
+}
+
+var albums = {
+  name: "";
+  sets of photos: "";
+}
 ### 3. Home Automation Manager
 
 This app will be a tool for managing a home automation system; it will keep
@@ -75,7 +130,26 @@ track of the time and temperature of the house that it monitors, and use that
 information to turn on and off different lights and adjust the thermostat up
 and down.
 
-> Answer here
+> With no new data being created or recorded we will only need object for the ights and the house.
+
+> a light has:
+> brightness
+> location
+
+> a house has:
+> temperature
+> set of lights
+
+var light = {
+  brightness: "";
+  location: [];
+}
+
+var house = {
+  temperature: "";
+  set of light: [];
+}
+
 
 ### 4. Sneaker Store
 
@@ -83,7 +157,22 @@ This app will allow customers to browse a list of products (sneakers, in this
 case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
 
-> Answer here
+> This app need objects for products, orders, and cart. We will also need a line item to tell how much user is orering of each.
+
+> A Product has:
+> a name
+> a description
+> a price
+>
+> An Order Item has:
+> a product
+> a quantity
+>
+> An Order has:
+> a set of order items
+> a status (i.e. 'in progress', 'completed')
+> a date of when the order was completed
+
 
 ## Representing Abstractions in Code
 
@@ -139,7 +228,7 @@ var exampleLine = {
 
 What are some advantages and disadvantages of choosing these representations? Please give at least one example of each.
 
-> Answer here
+> There is nowhere for the information that you want to give to the riders to be stored.  The descriptions are good because each station will be listed by name.
 
 ### 6. Doctor Appointment App
 
