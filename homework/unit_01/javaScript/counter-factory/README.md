@@ -30,8 +30,7 @@ the page needs to have the following format:
 
 ```html
 <div class='counter' data-index='2'>
-  <h3>Count: <span>0</span></h3>
-  <button class='increment'> + 1 </button>
+  <h3>Count: <span>0</span></h3><button class='increment'> + 1 </button>
 </div>
 ```
 

@@ -9,9 +9,12 @@ var timerUI = {
   },
   drawProgressBars: function(timerValue){
     var timeElapsed = 100 - timerValue;
-    document.getElementsByClassName('progress-bar')[0].style.width = timeElapsed + '%';
+        document.getElementsByClassName('progress-bar')[0].style.width = timeElapsed + '%';
   },
   drawLitFuses: function(timerValue){
+    var percentUnburnt = timerValue/100;
+    document.getElementsByClassName('unburnt')[0].style.width = percentUnburnt*98 + '%';
+    document.getElementsByClassName('burnt')[0].style.width = (1 - percentUnburnt)*98 + '%';
     // Your Code Here
   },
   drawCrawlers: function(timerValue){
