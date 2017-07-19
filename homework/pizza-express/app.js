@@ -5,7 +5,7 @@ const app = express();
 var hbs = require('hbs');
 
 app.set("view engine", "hbs");
-//app.set('views', './views');
+app.set('views', './views');
 // assigning 3000 as our port
 const port = 3000;
 
@@ -18,8 +18,8 @@ const toppingsController = require('./controllers/toppingsController');
 app.use('/toppings', toppingsController);
 
 
-// const orderController = require('./controllers/orderController');
-// app.use('/order', orderController);
+const orderController = require('./controllers/orderController');
+app.use('/order', orderController);
 
 
 
