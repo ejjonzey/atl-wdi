@@ -1,6 +1,8 @@
 const express     = require('express');
 const router = express.Router();
 const data = require('../data');
+
+
 /* INDEX TODOS */
 router.get('/', function(req,res) {
   res.render('todos/index', {
@@ -8,9 +10,11 @@ router.get('/', function(req,res) {
   });
 });
 
+
 router.get('/new', (req,res) => {
 	res.render('todos/new');
 });
+
 
 router.get('/:id', (req, res) => {
   const id = req.params.id;
@@ -19,6 +23,7 @@ router.get('/:id', (req, res) => {
   todo: todos,
 });
 });
+
 
 router.post('/', (req, res) => {
 	console.log(req.body);
@@ -30,4 +35,8 @@ router.post('/', (req, res) => {
 	res.redirect('/todos');
 });
 
+router.delete('/:id', (req, res) => {
+	data.seededTodos.splice(req.params.id, 1);
+	res.redirect('/todos');
+});
 module.exports = router;
