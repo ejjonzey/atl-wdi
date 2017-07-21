@@ -1,13 +1,7 @@
- 
-<h1>{{pirate.name}}</h1>
-<h2>Pirate Show Page</h2>
+<h1>pirates:</h1>
 
-<ul class="pirate-show">
- <li>Name: {{pirate.name}}</li>
- <li>Birthplace: {{pirate.birthplace}}</li>
- <li>Year of Death: {{pirate.death_year}}</li>
- <li>Based in: {{pirate.base}}</li>
- <li>Nickname: {{pirate.nickname}}</li>
-</ul>
+<h2>Description: {{ pirates.description }}</h2>
+<h2>Urgent: {{ pirates.urgent }}</h2>
 
- <a href="/pirates">Back Home</a>
+<a href="/pirates/{{id}}/edit">Edit pirates</a>
+<a href="/pirates">Go back!</a>

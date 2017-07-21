@@ -56,10 +56,29 @@ router.post('/', (req, res) => {
 //==============================
 // UPDATE
 //==============================
+router.put('/:id', (req, res) => {
+  // We have the ID
+  const id = req.params.id;
+  // Use the id to grab specific index in array
+  const pirates = data.seededpirates[id];
+  // Update the description and urgent values
+  pirates.description = req.body.description;
+  pirates.urgent = req.body.urgent;
+  // redirect back to individual pirates
+  res.method = "GET";
+  res.redirect(`/pirates/${id}`);
+});
 
 //==============================
 // DESTROY
 //==============================
+/* DELETE pirates */
+router.delete('/:id', (req, res) => {
+  data.seededpirates.splice(req.params.id, 1);
+
+  res.method= "GET";
+  res.redirect("/pirates");
+});
 
 //==============================
 // EXPORTS
