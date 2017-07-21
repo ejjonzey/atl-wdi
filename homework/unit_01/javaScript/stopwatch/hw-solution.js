@@ -42,7 +42,7 @@ const Stopwatch = {
     }
   },
   stop: function(){
-    this.isRunning = false;
+    this.isRunning = false  ;
   },
   lap: function(){
     if (this.isRunning) {
