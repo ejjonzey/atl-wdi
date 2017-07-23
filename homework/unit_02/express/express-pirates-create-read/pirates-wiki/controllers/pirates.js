@@ -74,7 +74,7 @@ router.put('/:id', (req, res) => {
 //==============================
 /* DELETE pirates */
 router.delete('/:id', (req, res) => {
-  data.seededpirates.splice(req.params.id, 1);
+  data.seededPirates.splice(req.params.id, 1);
 
   res.method= "GET";
   res.redirect("/pirates");
