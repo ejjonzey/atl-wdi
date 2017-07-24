@@ -13,15 +13,16 @@ class Tamagotchi {
         this.foodInTummy--;
         console.log("Waaaaa");
         console.log(this.name + "has this much food " + this.foodInTummy);
-    }
-}
+    };
+};
 
 
 
 //create new Tamagotchis
-var newTamagotchi1 = new Tamagotchi();
-var newTamagotchi2 = new Tamagotchi();
+var newBeast1 = new Tamagotchi();
+var newBeast2 = new Tamagotchi();
+
 
 //test out your Tamagotchies below via console.logs
-console.log(newTamagotchi1);
-console.log(newTamagotchi2);
+console.log(newBeast1);
+console.log(newBeast2);
