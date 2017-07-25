@@ -71,9 +71,14 @@
 // secondPromise.then(console.log);
 
 //VALUES AND PROMISES
-function attachTitle(name) {
-    return 'DR. ' + name;
+// function attachTitle(name) {
+//     return 'DR. ' + name;
+// }
+// Promise.resolve('MANHATTAN')
+//     .then(attachTitle)
+//     .then(console.log);
+
+//THROW AN ERROR
+function parsePromise(json) {
+    return
 }
-Promise.resolve('MANHATTAN')
-    .then(attachTitle)
-    .then(console.log);
