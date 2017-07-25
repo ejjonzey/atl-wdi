@@ -17,14 +17,39 @@ class Tamagotchi {
     puke() {
         this.foodInTummy--;
         console.log("Waaaaa");
-        console.log(this.name + " has this much food " + this.foodInTummy);
+        console.log(this.name + " has this much health " + this.health);
     }
     yawn() {
         this.restedness--;
         console.log('Ahhh, so tired');
         console.log(this.name + ' has current restedness of ' + this.restedness);
     }
-};
+    start() {
+        console.log("Starting " + this.name);
+        var self = this;
+        this.hungerTimer = setInterval(function() {
+            self.cry();
+        }, 6000);
+        this.yawnTimer = setInterval(function() {
+            self.yawn();
+        }, 10000);
+        this.sickTimer = setInterval(function() {
+            self.puke();
+        }, 25000);
+    };
+    stop() {
+        console.log("Stopping " + this.name);
+        clearInterval(this.hungerTimer);
+        clearInterval(this.yawnTimer);
+        clearInterval(this.sickTimer);
+    };
+}
+
+var Dean = new Tamagotchi('Dean', 'Demon')
+var Jody = new Tamagotchi('Jody', 'Douchebag')
+Dean.start();
+Jody.start();
+
 
 
 
