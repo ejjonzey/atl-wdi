@@ -12,8 +12,18 @@ class Tamagotchi {
     cry() {
         this.foodInTummy--;
         console.log("Waaaaa");
-        console.log(this.name + "has this much food " + this.foodInTummy);
-    };
+        console.log(this.name + " has this much food " + this.foodInTummy);
+    }
+    puke() {
+        this.foodInTummy--;
+        console.log("Waaaaa");
+        console.log(this.name + " has this much food " + this.foodInTummy);
+    }
+    yawn() {
+        this.restedness--;
+        console.log('Ahhh, so tired');
+        console.log(this.name + ' has current restedness of ' + this.restedness);
+    }
 };
 
 
