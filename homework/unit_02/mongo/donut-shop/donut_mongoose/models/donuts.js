@@ -1,7 +1,15 @@
 //requirements: require mongoose
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+// //create your donut schema:
 
-
-//create your donut schema:
-
-
-//export your donut with module.exports()
+var newDonut = new Schema({
+    name: String,
+    description: String,
+    img: String,
+    price: Number,
+    qty: Number
+});
+var DonutModel = mongoose.model('Donut', DonutSchema);
+// //export your donut with module.exports()
+module.exports = DonutModel;
