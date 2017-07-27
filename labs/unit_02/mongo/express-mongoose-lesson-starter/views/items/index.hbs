@@ -1,0 +1,8 @@
+<h1>{{name}}'s Items</h1>
+{{#each}}
+    <div>Item Name: {{this.name}}</div>
+    {{!-- /users/:userId/items/:itemId --}}
+    <a href='/users/{{../userId}}/items/{{this._id}}'Show Item</a>
+    <a href='/users/{{../userId}}/items/{{this._id}}/delete'Delete Item</a>
+
+{{/each}}
