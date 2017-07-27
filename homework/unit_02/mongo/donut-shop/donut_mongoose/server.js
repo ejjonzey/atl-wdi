@@ -43,3 +43,6 @@ app.use('/seed', seedController);
 mongoose.connect('mongodb://localhost/donut-shop')
 
 //CREATE THE MONGOOSE CONNECTION and SET APP TO LISTEN to 3000
+app.listen(3000, function() {
+    console.log("app listening on port 3000");
+});
