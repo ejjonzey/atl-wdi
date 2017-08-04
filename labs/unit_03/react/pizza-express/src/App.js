@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
+import Navbar from './Components/Navbar';
+import Splashimage from './Components/Splashimage';
+import Description from './Components/Description';
+import MenuList from './Components/MenuList';
+import LocationList from './Components/LocationList';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Place your components in here!</h1>
+        <Navbar />
+        <Splashimage/>
+        <Description/>
+        <MenuList/>
+        <LocationList/>
       </div>
     );
   }
