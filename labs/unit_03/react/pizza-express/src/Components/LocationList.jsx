@@ -9,13 +9,11 @@ class LocationList extends Component{
             <div id='locations'>
                 <h1>Locations</h1>
                 <div class='location'>
-                    <div class='locations'>
                     {locationData.map((item,i)=>{
                         return <Locations key={i} data={item}/>
                     })}
                 </div>
             </div>
-        </div>
         );
     }
 }
