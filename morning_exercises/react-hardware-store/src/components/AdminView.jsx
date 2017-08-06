@@ -8,15 +8,16 @@ import ProductForm from './ProductForm';
        const productList = this.props.productList;
 
      return (
-         <div>
-           <h1>Admin View</h1>
+         <div className='large-view-box'>
+           <h1>Admin</h1>
  
            <h2>Products</h2>
            {/* show our list of products here */}
-            <ProductList 
+            <ProductList
             productList={productList}
-            deleteProductFromList={this.props.deleteProductFromList}/> 
-
+            viewMode={'ADMIN'}
+            deleteProductFromList={this.props.deleteProductFromList} 
+            showAdminOptions={true}/>
                     
  
            <h2>Create a New Product</h2>
