@@ -21,9 +21,13 @@
             lastName: 'Kenobi'
         }
     ];
-	
-    const kenobis = ???
-	```
+
+const kenobis = people.filter(function(e){
+        return e.lastName === 'Kenobi'
+    });
+    console.log(kenobis);
+
+
 	
 2. Find 'Jill Kenobi' from our array of people:
 
