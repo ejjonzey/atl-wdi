@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Debits from'./Components/Debits';
+import DebitsPage from './Components/DebitsPage';
 import Home from './Components/Home';
 import UserProfile from './Components/UserProfile';
 
@@ -65,11 +65,16 @@ class App extends Component {
         memberSince={this.state.currentUser.memberSince} />
     )
 
+const DebitsPageComponent=()=>(
+  <DebitsPage debits={this.state.debits}/>);
+
+
     return (
       <Router>
         <div>
           <Route exact path="/" render={HomeComponent} />
           <Route exact path="/userProfile" render={UserProfileComponent} />
+          <Route exact path='/Debits' render={DebitsPageComponent}/>
         </div>
       </Router>
     );

@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-
-
-class Debits extends Component{
-    render(){
-        return(
-            <div>
-                <h1>Debits</h1>
-            </div>
-        );
-    }
-}
-
+const Debits = (props) => {
+    return (
+        <div>
+        <span>Description: {props.description}</span>
+        <span>Amount: {props.amount}</span>
+        <span>Date: {props.date}</span> 
+        </div>
+    );
+};
 
 export default Debits;
