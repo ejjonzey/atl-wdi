@@ -32,7 +32,7 @@ const kenobis = people.filter(function(e){
 2. Find 'Jill Kenobi' from our array of people:
 
 	```javascript
-    const people = [
+    const morePeople = [
         {
             firstName: 'Ben',
             lastName: 'Kenobi'
@@ -107,7 +107,7 @@ const kenobis = people.filter(function(e){
 5. Find ALL books written after 2010:
 
     ```javascript
-    const books = [
+    const moreBooks = [
         {
             id: 'BADSFJ5332',
             title: 'Test Driven Development: By Example',
@@ -130,14 +130,14 @@ const kenobis = people.filter(function(e){
         }
     ];
 
-    const myFavoriteBook = ???
+    const recentBooks = ???
     ```
     
 6. BONUS: Find any orders that qualify for free shipping. To qualify for free shipping, 
 an order's total, including tax (assume a tax rate of 7%) must be greater than $100.00:
 
     ```javascript
-    const products = [
+    const orders = [
         {
             orderName: 'An Order',
             items: [
