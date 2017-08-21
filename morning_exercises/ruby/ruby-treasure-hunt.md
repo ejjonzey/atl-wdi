@@ -26,9 +26,8 @@ Ready.... Set..... Go!!!
 
 1.   What method would turn "marc" into "cram"?
 
-  ```
-  your answer here
-  ```
+a = ["marc"]
+a.reverse_each {|x| print x, " "}
 
 2.   What method could you use that returns a boolean to check if "pickle" includes the substring "ick"?
 
