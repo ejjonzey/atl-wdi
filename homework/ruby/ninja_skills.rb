@@ -27,3 +27,13 @@
 # gToNumber = 2
 # puts g.to_i+ gToNumber
 
+# Input & Output
+# print "Please give me a number"
+# number = gets.chomp.to_i
+# puts number * 2
+
+# print "What is your name"
+# name = gets.chomp
+# print "What do you like to do?"
+# activity = gets.chomp
+# print "#{name} likes to #{activity}"
