@@ -37,3 +37,17 @@
 # print "What do you like to do?"
 # activity = gets.chomp
 # print "#{name} likes to #{activity}"
+
+# Arrays:
+# myFirstArray = []
+# myFirstArray = ["Mine", "Yours", "His", "Hers", "Ours", 1, 2, 3, 4]
+# puts myFirstArray[8]
+# puts myFirstArray[0]
+# myFirstArray.insert(1,"Joe")
+# puts myFirstArray
+# myFirstArray.insert(2, 3)
+# puts myFirstArray
+# myFirstArray.push("true")
+# puts myFirstArray
+# puts myFirstArray[3]
+
