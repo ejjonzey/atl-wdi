@@ -51,3 +51,7 @@
 # puts myFirstArray
 # puts myFirstArray[3]
 
+firstRange = (1..10).to_a
+# puts firstRange
+# secondRange = (1...1000).to_a
+# puts secondRange
