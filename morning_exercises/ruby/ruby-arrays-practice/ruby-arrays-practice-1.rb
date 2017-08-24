@@ -4,138 +4,150 @@ require 'ostruct'
 
 #  1. Return an array of each Person's full name, upper-cased
 
-people = [
-    OpenStruct.new(
-        first_name: 'Jamie',
-        last_name: 'King'
-    ),
-    OpenStruct.new(
-        first_name: 'Danny',
-        last_name: 'Hurley',
-    ),
-    OpenStruct.new(
-        first_name: 'Maren',
-        last_name: 'Woodruff',
-    )
-]
+# people = [
+#     OpenStruct.new(
+#         first_name: 'Jamie',
+#         last_name: 'King'
+#     ),
+#     OpenStruct.new(
+#         first_name: 'Danny',
+#         last_name: 'Hurley',
+#     ),
+#     OpenStruct.new(
+#         first_name: 'Maren',
+#         last_name: 'Woodruff',
+#     )
+# ]
 
-upper_case_full_names = []
-
+# upper_case_full_name = people.map do |person|
+#     full_name = "#{person.first_name} #{person.last_name}"
+#     full_name.upcase
+# end
+# puts upper_case_full_name
 
 #   2. Find the first order for each user
 
-users = [
-    OpenStruct.new(
-        name: 'Tim',
-        orders: [
-            OpenStruct.new(
-                description: 'a bike'
-            )
-        ]
-    ),
-    OpenStruct.new(
-        name: 'Jim',
-        orders: [
-            OpenStruct.new(
-                description: 'bees'
-            ),
-            OpenStruct.new(
-                description: 'fishing rod'
-            )
-        ]
-    ),
-    OpenStruct.new(
-        name: 'Slim',
-        orders: [
-            OpenStruct.new(
-                description: 'a MacBook'
-            ),
-            OpenStruct.new(
-                description: 'The West Wing DVDs'
-            ),
-            OpenStruct.new(
-                description: 'headphones'
-            ),
-            OpenStruct.new(
-                description: 'a kitten'
-            )
-        ]
-    )
-]
+# users = [
+#     OpenStruct.new(
+#         name: 'Tim',
+#         orders: [
+#             OpenStruct.new(
+#                 description: 'a bike'
+#             )
+#         ]
+#     ),
+#     OpenStruct.new(
+#         name: 'Jim',
+#         orders: [
+#             OpenStruct.new(
+#                 description: 'bees'
+#             ),
+#             OpenStruct.new(
+#                 description: 'fishing rod'
+#             )
+#         ]
+#     ),
+#     OpenStruct.new(
+#         name: 'Slim',
+#         orders: [
+#             OpenStruct.new(
+#                 description: 'a MacBook'
+#             ),
+#             OpenStruct.new(
+#                 description: 'The West Wing DVDs'
+#             ),
+#             OpenStruct.new(
+#                 description: 'headphones'
+#             ),
+#             OpenStruct.new(
+#                 description: 'a kitten'
+#             )
+#         ]
+#     )
+# ]
 
-first_order_for_each_user = []
+# first_order_for_each_user = users.map do |user|
+#     user[:orders].first
+# end
+# puts first_order_for_each_user
 
 
 #   3. Find the average amount spent on coffee, per transaction, for each person
 
-people = [
-    OpenStruct.new(
-        name: 'Tim',
-        transactions: [
-            OpenStruct.new(
-                type: 'COFFEE',
-                amount: 7.43
-            ),
-            OpenStruct.new(
-                type: 'TACOS',
-                amount: 14.65
-            ),
-            OpenStruct.new(
-                type: 'COFFEE',
-                amount: 4.43
-            )
-        ]
-    ),
-    OpenStruct.new(
-        name: 'Tim',
-        transactions: [
-            OpenStruct.new(
-                type: 'BIKES',
-                amount: 800.00
-            ),
-            OpenStruct.new(
-                type: 'TACOS',
-                amount: 14.65
-            ),
-            OpenStruct.new(
-                type: 'COFFEE',
-                amount: 4.43
-            )
-        ]
-    ),
-    OpenStruct.new(
-        name: 'Tim',
-        transactions: [
-            OpenStruct.new(
-                type: 'COFFEE',
-                amount: 7.43
-            ),
-            OpenStruct.new(
-                type: 'COFFEE',
-                amount: 100.00
-            ),
-            OpenStruct.new(
-                type: 'COFFEE',
-                amount: 4.43
-            )
-        ]
-    )
-]
+# people = [
+#     OpenStruct.new(
+#         name: 'Tim',
+#         transactions: [
+#             OpenStruct.new(
+#                 type: 'COFFEE',
+#                 amount: 7.43
+#             ),
+#             OpenStruct.new(
+#                 type: 'TACOS',
+#                 amount: 14.65
+#             ),
+#             OpenStruct.new(
+#                 type: 'COFFEE',
+#                 amount: 4.43
+#             )
+#         ]
+#     ),
+#     OpenStruct.new(
+#         name: 'Tim',
+#         transactions: [
+#             OpenStruct.new(
+#                 type: 'BIKES',
+#                 amount: 800.00
+#             ),
+#             OpenStruct.new(
+#                 type: 'TACOS',
+#                 amount: 14.65
+#             ),
+#             OpenStruct.new(
+#                 type: 'COFFEE',
+#                 amount: 4.43
+#             )
+#         ]
+#     ),
+#     OpenStruct.new(
+#         name: 'Tim',
+#         transactions: [
+#             OpenStruct.new(
+#                 type: 'COFFEE',
+#                 amount: 7.43
+#             ),
+#             OpenStruct.new(
+#                 type: 'COFFEE',
+#                 amount: 100.00
+#             ),
+#             OpenStruct.new(
+#                 type: 'COFFEE',
+#                 amount: 4.43
+#             )
+#         ]
+#     )
+# ]
 
-coffee_average_per_person = []
+# coffee_average_per_person = people.map do |person|
+
+#     coffee_amount_per_user = person.transactions.map do |transaction|
+#         transaction.type == "coffee".upcase ? transaction.amount: 0.00
+# end
+
+# coffee_total_per_user = coffee_amount_per_user.reduce(:+)
+
+# coffee_per_day = person.transactions.count do |transaction|
+#     transaction.type == "coffee".upcase
+# end
+# OpenStruct.new(
+#     name: person.name,
+#     coffee_average: coffee_total_per_user / coffee_per_day
+# )
+# end
+# puts coffee_average_per_person
 
 
 #   4. Find the most expensive product for each store, with the store name:
-
-# EXAMPLE:
-# {
-#   store_name: 'Best Buy',
-#     most_expensive_product: {
-#       description: 'iPhone',
-#       price: 799.99
-#     }
-# }
-
 
 stores = [
     OpenStruct.new(
@@ -152,7 +164,7 @@ stores = [
         ]
     ),
     OpenStruct.new(
-        store_name: 'Target',
+        name: 'Target',
         products: [
             OpenStruct.new(
                 description: 'Silver',
@@ -165,7 +177,7 @@ stores = [
         ]
     ),
     OpenStruct.new(
-        store_name: 'Amazon',
+        name: 'Amazon',
         products: [
             OpenStruct.new(
                 description: 'Opal',
@@ -179,4 +191,6 @@ stores = [
     )
 ]
 
-most_expensive_products_by_store = []
+most_expensive_products_by_store = stores.map do |store|
+
+    most

@@ -3,22 +3,27 @@ require 'Date'
 
 # 1. Find the first user who signed up for our app:
 
-users = [
-    {
-        username: 'batman',
-        created_at: Date.new(2001,2,3)
-    },
-    {
-        username: 'robin',
-        created_at: Date.new(1995,4,14)
-    },
-    {
-        username: 'alfred',
-        created_at: Date.new(2014,7,23)
-    }
-]
+# users = [
+#     {
+#         username: 'batman',
+#         created_at: Date.new(2001,2,3)
+#     },
+#     {
+#         username: 'robin',
+#         created_at: Date.new(1995,4,14)
+#     },
+#     {
+#         username: 'alfred',
+#         created_at: Date.new(2014,7,23)
+#     }
+# ]
 
-first_user = ???
+# first_user = users.min_by do |user|
+#     user[:created_at]
+#     puts first_user
+# end
+
+# puts first_user
 
 # 2. Find the first customer's account balance
 
@@ -61,74 +66,76 @@ customers = [
     )
 ]
 
-first_customer_account_balance = ???
+first_customer_account_balance =
 
-# 3. Remove hair care products from the database
+end
 
-products = [
-    {
-        category: 'SPORTS'
-    },
-    {
-        category: 'MOVIES'
-    },
-    {
-        category: 'MOVIES'
-    },
-    {
-        category: 'HAIR_CARE'
-    },
-    {
-        category: 'MOVIES'
-    },
-    {
-        category: 'HAIR_CARE'
-    }
-]
+# # 3. Remove hair care products from the database
 
-no_hair_care_products = ???
+# products = [
+#     {
+#         category: 'SPORTS'
+#     },
+#     {
+#         category: 'MOVIES'
+#     },
+#     {
+#         category: 'MOVIES'
+#     },
+#     {
+#         category: 'HAIR_CARE'
+#     },
+#     {
+#         category: 'MOVIES'
+#     },
+#     {
+#         category: 'HAIR_CARE'
+#     }
+# ]
 
-# 4. If any item in the array is a number, change it to a String
-# e.g. [1, 2, 'blah'] ===> ['1', '2', 'blah']
+# no_hair_care_products = ???
 
-const things = [23, 43, 'strawberry', 'ruby', 234643234, 'another red thing', 1337]
+# # 4. If any item in the array is a number, change it to a String
+# # e.g. [1, 2, 'blah'] ===> ['1', '2', 'blah']
 
-const string_things = ???
+# const things = [23, 43, 'strawberry', 'ruby', 234643234, 'another red thing', 1337]
 
-# 5. Sort customers alphabetically by first and last name:
+# const string_things = ???
 
-customers = [
-    OpenStruct.new(
-        first_name: 'Alan',
-        last_name: 'Alda'
-    ),
-    OpenStruct.new(
-        first_name: 'Alan',
-        last_name: 'Arkin'
-    ),
-    OpenStruct.new(
-        first_name: 'Betty',
-        last_name: 'White'
-    )
-]
+# # 5. Sort customers alphabetically by first and last name:
 
-sorted_customers = ???
+# customers = [
+#     OpenStruct.new(
+#         first_name: 'Alan',
+#         last_name: 'Alda'
+#     ),
+#     OpenStruct.new(
+#         first_name: 'Alan',
+#         last_name: 'Arkin'
+#     ),
+#     OpenStruct.new(
+#         first_name: 'Betty',
+#         last_name: 'White'
+#     )
+# ]
 
-# 6. Return all decorations with  in their description
+# sorted_customers = ???
 
-decorations = [
-    {
-        description: 'Blue birthday hat'
-    },
-    {
-        description: 'red balloon'
-    },
-    {
-        description: 'yellow candles'
-    },
-    {
-        description: 'blue confetti'
-    }
-]
+# # 6. Return all decorations with  in their description
 
-blue_decorations = ???
+# decorations = [
+#     {
+#         description: 'Blue birthday hat'
+#     },
+#     {
+#         description: 'red balloon'
+#     },
+#     {
+#         description: 'yellow candles'
+#     },
+#     {
+#         description: 'blue confetti'
+#     }
+# ]
+
+# blue_decorations = ???
