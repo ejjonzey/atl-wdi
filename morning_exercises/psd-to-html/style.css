@@ -1,0 +1,14 @@
+body {
+    background-color: #10151c
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.article-logo {
+    height: 4em;
+}
