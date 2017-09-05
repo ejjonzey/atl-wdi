@@ -1,4 +1,5 @@
 # asking for subtotal
+<<<<<<< HEAD
 puts "What is your subtotal?"
 subtotal = gets.chomp
 
@@ -43,6 +44,8 @@ total_per_person = total/people
 
 puts "total is  #{total}"
 puts "Each person owes #{total_per_person}"
+=======
+>>>>>>> cd4f1a7af57532a6bba617291e0cd336deb38518
 
 # meal_with_tax = subtotal + tax_value
 
